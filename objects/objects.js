@@ -15,3 +15,19 @@ export function formatWork(data) {
         writer: data.author.first + ' ' + data.author.last,
     };
 }
+
+export function reverseWork(data) {
+    const names = data.writer.split(' ');
+    const first = names[0];
+    const last = names[names.length - 1];
+    return {
+        author: {
+            first,
+            last,
+        },
+        book: {
+            title: data.work
+        }
+
+    };
+}
