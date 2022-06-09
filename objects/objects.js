@@ -8,3 +8,10 @@ export function makePet(name, type, age, food, toys) {
         toys,
     };
 } 
+
+export function formatWork(work, writer) {
+    return {
+        work,
+        writer,
+    };
+}
