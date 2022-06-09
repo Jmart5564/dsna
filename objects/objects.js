@@ -9,9 +9,9 @@ export function makePet(name, type, age, food, toys) {
     };
 } 
 
-export function formatWork(work, writer) {
+export function formatWork(data) {
     return {
-        work,
-        writer,
+        work: data.book.title,
+        writer: data.author.first + ' ' + data.author.last,
     };
 }

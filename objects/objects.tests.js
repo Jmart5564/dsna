@@ -28,8 +28,18 @@ test('makes a pet', (expect) => {
 
 test('formats a book', (expect) => {
     const actual = formatWork(
-        'war of the worlds',
-        'h.g. wells', 
+        
+        { 
+            author: {
+                last: 'wells', 
+                first: 'h.g.'
+            },
+            book: {
+                title: 'war of the worlds', 
+                genre: 'scifi',
+                words: 312000
+            }
+        }
     );
 
     expect.deepEqual(actual, {
