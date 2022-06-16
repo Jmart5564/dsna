@@ -50,7 +50,7 @@ test('Returns first key, last value', (expect) => {
     };
     const expected = {
         firstKey:'name', 
-        lastValue: 2};
+        lastValue: 2 };
 
     const actual = firstKeyLastValue(cat);
 
